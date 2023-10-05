@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 def add(a, b):
-    """Mh additiom function
+    """My additiom function
 
     Args:
     a: first integer
