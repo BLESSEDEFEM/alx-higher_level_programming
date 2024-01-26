@@ -4,8 +4,8 @@ Usage: ./3-error_code.py <URL>
   - Handles HTTP errors.
 """
 import sys
+import urllib.error
 import urllib.request
-
 
 
 if __name__ == "__main__":
@@ -16,4 +16,4 @@ if __name__ == "__main__":
         with urllib.request.urlopen(request) as response:
             print(response.read().decode("ascii"))
     except urllib.error.HTTPError as e:
-        print("Error code: {]".format(e.code))
+        print("Error code: {}".format(e.code))
